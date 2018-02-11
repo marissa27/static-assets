@@ -24,6 +24,26 @@ form {
   align-items: center;
 }
 
+h1 {
+  color: #f4f8f9;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  width: 210px;
+  background-color: #d8344c;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ba253b;
+}
+
 .input-email,
 .input-password {
   border-radius: 5px;
@@ -32,6 +52,8 @@ form {
   width: 210px;
 }
 
-h1 {
-  color: #f4f8f9;
+label {
+  text-align: center;
+  color: white;
+  font-size: 13px;
 }
