@@ -1,11 +1,9 @@
-document.onreadystatechange = function () {
-  if (document.readyState == "interactive") {
-    var email = localStorage.getItem('rememberEmail')
-    if (email) {
-      document.getElementById("input-email").innerHTML = email;
-    }
+(function () {
+  var email = localStorage.getItem('rememberEmail');
+  if (email) {
+    document.getElementById("input-email").value = email;
   }
-}
+})()
 
 document.getElementById('form-button').addEventListener('click', function(e) {
   e.preventDefault();
@@ -29,6 +27,6 @@ function clearInputs() {
 }
 
 document.getElementById('remember-me').addEventListener('click', function() {
-  var email = document.getElementById('input-email');
+  var email = document.getElementById('input-email').value;
   localStorage.setItem('rememberEmail', email);
 });
