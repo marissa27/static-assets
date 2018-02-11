@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css">
+  </head>
+  <body>
+    <form id="login-form">
+      <h1>Login</h1>
+      <label for="input-email">Email Input:</label>
+        <input id="input-email" type="email" placeholder="Email" aria-required="true">
+      <label for="input-password">Password Input:</label>
+        <input id="input-password" type="password" placeholder="Password" aria-required="true">
+      <section class="remember-user">
+        <input id="remember-me" type="checkbox" value="remember me" aria-required="false">
+        <label for="remember-me">Remember Me (optional)</label>
+      </section>
+      <button id="form-button" form="login-form">Submit</button>
+      <h5 id="login-error"></h5>
+    </form>
+    <script src="./login.js"></script>
+  </body>
+</html>
