@@ -12,16 +12,15 @@ body {
   background: linear-gradient(to top, #182848, #4b6cb7);
 }
 
-body {
-  display: flex;
-}
-
 form {
-  display: flex;
-  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
   height: 314px;
   margin: auto;
   padding: 30px;
+  width: 300px;
   background-color: #eaedf2;
   border-radius: 3px;
   font-family: 'Helvetica', sans-serif;
