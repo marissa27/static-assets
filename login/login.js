@@ -10,17 +10,11 @@ function authorizeLogin(email, password) {
     window.location = './success.html'
   } else {
     document.getElementById("login-error").innerHTML = "Oops! Typo? Try again.";
+    clearInputs();
   }
 }
 
-
-//
-//         if (ValidEmail === true && ValidPassword === true) {
-//             $('.valid').css('display', 'block');
-//             window.location = "http://arkev.com"; // go to home.html
-//         }
-//         else {
-//             $('.error').css('display', 'block'); // show error msg
-//         }
-//     });
-// });
+function clearInputs() {
+  document.getElementById("input-email").value = "";
+  document.getElementById("input-password").value = "";
+}
