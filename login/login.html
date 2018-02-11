@@ -8,11 +8,13 @@
   <body>
     <form id="login-form">
       <h1>Login</h1>
-      <input class="input-email" type="email" placeholder="Email">
-      <input class="input-password" type="password" placeholder="Password">
+      <label for="input-email">Email Input:</label>
+        <input id="input-email" type="email" placeholder="Email" aria-required="true">
+      <label for="input-password">Password Input:</label>
+        <input id="input-password" type="password" placeholder="Password" aria-required="true">
       <section class="remember-user">
-        <input id="remember-me" type="checkbox" name="remember me">
-        <label for="remember-me">Remember Me</label>
+        <input id="remember-me" type="checkbox" value="remember me" aria-required="false">
+        <label for="remember-me">Remember Me (optional)</label>
       </section>
       <button class="form-button" form="login-form">Submit</button>
     </form>

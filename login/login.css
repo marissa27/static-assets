@@ -17,7 +17,6 @@ body {
 }
 
 form {
-  align-items: center;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -25,11 +24,19 @@ form {
 }
 
 h1 {
+  text-align: center;
   color: #f4f8f9;
 }
 
+
+label {
+  margin: 5px 0 0 0;
+  color: white;
+  font-size: 13px;
+}
+
 button {
-  margin: 5px;
+  margin: 5px 0;
   padding: 5px;
   width: 210px;
   background-color: #d8344c;
@@ -44,16 +51,10 @@ button:hover {
   background-color: #ba253b;
 }
 
-.input-email,
-.input-password {
+#input-email,
+#input-password {
   border-radius: 5px;
   padding: 5px;
-  margin: 5px;
+  margin: 5px 0;
   width: 210px;
-}
-
-label {
-  text-align: center;
-  color: white;
-  font-size: 13px;
 }
