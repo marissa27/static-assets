@@ -2,29 +2,25 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   height: 100%;
-  margin: 0;
-  width: 100%;
   background: #4b6cb7;
   background: -webkit-linear-gradient(to top, #182848, #4b6cb7);
   background: linear-gradient(to top, #182848, #4b6cb7);
 }
 
-body {
-  display: flex;
-}
-
 form {
-  display: flex;
-  flex-direction: column;
   height: 314px;
+  left: 50%;
   margin: auto;
   padding: 30px;
+  position: absolute;
+  top: 50%;
+  width: 300px;
   background-color: #eaedf2;
   border-radius: 3px;
   font-family: 'Helvetica', sans-serif;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
