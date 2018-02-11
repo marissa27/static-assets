@@ -19,6 +19,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  height: 314px;
   margin: auto;
   padding: 30px;
   background-color: #eaedf2;
@@ -61,4 +62,8 @@ button:hover {
   margin: 5px 0;
   width: 210px;
   border: 1px solid #324777;
+}
+
+#login-error {
+  margin: 5px 0 0 0;
 }
