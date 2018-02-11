@@ -23,3 +23,15 @@ form {
   font-family: 'Helvetica', sans-serif;
   align-items: center;
 }
+
+.input-email,
+.input-password {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 210px;
+}
+
+h1 {
+  color: #f4f8f9;
+}
